@@ -139,7 +139,6 @@
 </script>
 
 <style scoped lang="scss">
-	@import '~scss_vars';
 	
 	.container {
 		position: absolute;
