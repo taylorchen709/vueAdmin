@@ -204,7 +204,7 @@
 			//显示编辑界面
 			handleEdit: function (index, row) {
 				this.editFormVisible = true;
-				this.editForm = Object.assign({}, row);
+				this.editForm = JSON.parse(JSON.stringify(row));
 			},
 			//显示新增界面
 			handleAdd: function () {
