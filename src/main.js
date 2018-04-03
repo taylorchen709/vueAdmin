@@ -11,7 +11,7 @@ import Vuex from 'vuex'
 //import 'nprogress/nprogress.css'
 import routes from './routes'
 import Mock from './mock'
-Mock.bootstrap();
+Mock.bootstrap();//调用正式接口时注释
 import 'font-awesome/css/font-awesome.min.css'
 
 Vue.use(ElementUI)
