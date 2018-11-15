@@ -120,6 +120,9 @@
 			//折叠导航栏
 			collapse:function(){
 				this.collapsed=!this.collapsed;
+				if (this.collapsed === false) {
+                    this.$refs.menuExpanded.$el.style.width = '230px'; // bugfix
+                }
 			},
 			showMenu(i,status){
 				this.$refs.menuCollapsed.getElementsByClassName('submenu-hook-'+i)[0].style.display=status?'block':'none';
